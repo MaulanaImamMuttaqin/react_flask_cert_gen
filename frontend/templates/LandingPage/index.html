@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='static/LandingPage/style.css')}}">
+    <title>Certificate Generator</title>
+</head>
+
+<body>
+    <div class="h-screen w-screen center p-10 py-5">
+        <div class="bg-pattern-3 bg-cover bg-center h-full w-full absolute -z-10">
+
+        </div>
+        <div class="relative bg-pattern-4 bg-cover bg-center  bg-white h-full w-full  text-white rounded-3xl overflow-hidden"
+            style="opacity: 0.97">
+            <!-- Navbar -->
+            <div class="h-16 w-full flex justify-between fixed left-0 px-14 z-10">
+                <div id="left" class="h-full center pl-5 text-2xl">
+                    Certificate Generator
+                </div>
+                <div id="middle" class=" h-full flex gap-5 center">
+                    <a href="#first" class="list-style active">Home</a>
+                    <a href="#second" class="list-style">Start</a>
+                    <a href="#third" class="list-style">About</a>
+                    <a href="#fourth" class="list-style">Pricing</a>
+                </div>
+                <div id="right" class="flex center h-full ">
+                    <a class="list-style active">Sign In</a>
+                    <a class="list-style">Sign Up</a>
+                </div>
+            </div>
+            <!-- end Navbar -->
+            <div class="overflow-y-scroll scrollbar-hide h-full w-full" style='scroll-behavior: smooth'>
+                <!-- First Part -->
+
+                <div id="first" class="h-full w-full ">
+
+                    <div id="body" class="h-full w-1/2 transform translate-x-full center px-10 ">
+                        <div class="">
+                            <div id="title" class="text-4xl font-bold text-white my-3">
+                                <p>CERTIFICATE GENERATOR</p>
+                            </div>
+                            <div id="content" class="my-3 text-white">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, doloribus!
+                                    Dolorem delectus a, neque qui modi blanditiis similique iusto animi amet illo
+                                    dignissimos consectetur fugiat nam excepturi asperiores ut nihil!</p>
+                            </div>
+                            <div id="buttons" class="my-3">
+                                <button class="button-style">FREE SIGN UP</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- End of First Part -->
+
+                <!-- Second Part -->
+
+                <div id="second" class="h-full w-full center flex-col gap-5 text-gray-300">
+
+                    <p class="text-6xl">Already Sign Up..?</p>
+                    <p class="text-xl">Sign In right now as</p>
+                    <div>
+                        <button class="button-style">RECEIVER</button>
+                        <button class="button-style">PRODUCER</button>
+
+                    </div>
+                </div>
+                <!-- End of Second Part -->
+            </div>
+        </div>
+    </div>
+
+    <script src="{{url_for('static', filename='static/LandingPage/script.js')}}"></script>
+</body>
+
+</html>
