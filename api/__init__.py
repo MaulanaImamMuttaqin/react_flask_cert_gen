@@ -9,7 +9,7 @@ from flask_migrate import Migrate
 
 
 
-app = Flask(__name__, static_folder="../frontend", template_folder="../frontend/templates")
+app = Flask(__name__, static_folder="../frontend", template_folder="../frontend")
 app.config.from_object(Config)
 
 
@@ -24,9 +24,9 @@ def create_app():
     CORS(app)
     
     # from .frontend import react_app
-    from .frontend import landing_page_app, react_app, client_react_app
+    from .frontend import landing_page_app, admin_react_app, client_react_app
     landing_page_app()
-    react_app()
+    admin_react_app()
     client_react_app()
     
     from .routes.Authentication import auth
